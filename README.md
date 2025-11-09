@@ -1,7 +1,11 @@
 # sign-language-interpretation-ds
 
-for MS2SL: ``` git clone https://github.com/hechang25/MS2SL.git ```
-for pose-to-video:
+### For MS2SL: 
+``` 
+git clone https://github.com/hechang25/MS2SL.git 
+```
+
+### For pose-to-video:
 ```
 git clone https://github.com/sign-language-processing/pose-to-video.git
 cd pose-to-video    
