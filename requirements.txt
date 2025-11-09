@@ -1,0 +1,48 @@
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Speech Recognition
+openai-whisper
+transformers>=4.30.0
+datasets
+
+# NLP
+spacy>=3.5.0
+nltk
+sentencepiece
+
+# Computer Vision
+opencv-python>=4.7.0
+mediapipe>=0.10.0
+pillow
+
+# Video Processing
+ffmpeg-python
+moviepy
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn
+
+# Utilities
+tqdm
+matplotlib
+seaborn
+
+# API & Web
+fastapi>=0.100.0
+uvicorn[standard]
+python-multipart
+celery
+redis
+
+# Distance Metrics
+editdistance~=0.8.1
+python-Levenshtein
+
+# Other
+pyyaml
+python-dotenv
