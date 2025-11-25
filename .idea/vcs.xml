@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MS2SL" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pose-to-video" vcs="Git" />
   </component>
 </project>
