@@ -6,10 +6,17 @@ import asyncio
 
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 from pipeline import SubtitlePipeline
 
 app = FastAPI(title="Unified Subtitle API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 DEFAULT_STYLE = {
     "fontSize": 28,
@@ -83,10 +90,13 @@ async def create_subtitled_video(
     )
 
     return FileResponse(
-        output_path,
-        media_type="video/mp4",
-        filename=f"video_{lang}_styled.mp4"
-    )
+    output_path,
+    media_type="video/mp4",
+    filename=f"video_{lang}_styled.mp4",
+    headers={"Access-Control-Allow-Origin": "*",
+             "Access-Control-Allow-Headers": "*",
+             "Access-Control-Allow-Methods": "*"}
+)
 
 
 @app.get("/")
